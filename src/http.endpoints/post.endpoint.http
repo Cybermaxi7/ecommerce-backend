@@ -1,0 +1,33 @@
+POST  http://localhost:3002/users
+Content-Type: application/json
+
+{
+    "name": "Olayinka Ibrahim",
+    "email": "bletimixau@email.com",
+    "password": "@newPassWord123"
+}
+
+
+POST  http://localhost:3002/users/many-users
+Content-Type: application/json
+
+{
+    "users":
+    [
+        {
+    "name": "Olayinka Ibrahim",
+    "email": "bletimixau@email.com",
+    "password": "@newPassWord123"
+}
+
+    ]
+}
+
+
+POST  http://localhost:3002/auth/signin
+Content-Type: application/json
+
+{
+    "email": "bletimixau@email.com",
+    "password": "@newPassWord123"
+}
