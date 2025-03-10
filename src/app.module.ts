@@ -40,6 +40,9 @@ import { ChatGateWay } from './chat/chat.gateway';
         database: configService.get('POSTGRES_NAME'),
         synchronize: configService.get('POSTGRES_SYNC'), // For development only
         autoLoadEntities: configService.get('DATABASE_LOAD'),
+        ssl: {
+          rejectUnauthorized: false,
+        },
       }),
     }),
   ],
